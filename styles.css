@@ -1,0 +1,13 @@
+:root {
+    --border: #e5e5e5;
+    --shadow: 0 8px 16px rgba(0,0,0,0,.08);
+}
+
+body {
+    margin: 0;
+    background: hsl(0, 0%, 100%);
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+}
+
