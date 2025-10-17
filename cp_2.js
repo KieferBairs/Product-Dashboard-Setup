@@ -27,3 +27,21 @@ async function fetchProductAsync() {
         handleError(error);
         }
 }
+
+// Display first 5 products with image, name, and price
+function displayProducts(products) {
+    const container = document.getElementById("product-container");
+    if (!container) return;
+
+    container.innerHTML = ""; // Clear before inserting new products
+
+    const FirstFive = products.slice(0,5);
+    FirstFive.forEach((p) => {
+        const {name, price, image} = p.fields;
+        const imgUrl = image[0].url;
+        const formattedPrice = (price / 100).toLocaleString("en-US", {
+            stle: "currency",
+            currenct: "USD",
+        });
+        
+    
