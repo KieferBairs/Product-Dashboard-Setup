@@ -16,3 +16,14 @@ function fetchProductsThen() {
     });
 }
 
+// Async/await + try/catch
+async function fetchProductAsync() {
+    try {
+        const res =await fetch(API_URL);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const products = await res.json();
+        displayProducts(products);
+      } catch (error) {
+        handleError(error);
+        }
+}
