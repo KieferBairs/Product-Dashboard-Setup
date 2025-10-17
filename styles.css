@@ -58,3 +58,22 @@ body {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+/* Product Info */
+.product-name {
+    font-size: 20px;
+    margin: 8px 0 4px;
+}
+.product-price {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+/* Error */
+.error {
+    grid-column: 1/-1;
+    border: 1px solid var(--border);
+    padding: 16px;
+    border-radius: 10px;
+    background: #f8f8f8;
+}
