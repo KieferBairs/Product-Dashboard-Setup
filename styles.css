@@ -45,7 +45,16 @@ body {
 }
 
 /* Hover Animation */
-.product-card: :hover {
+.product-card:hover {
     transform: scale(1.03);
     box-shadow: var(--shadow);
+}
+
+/* Image */
+.product-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
