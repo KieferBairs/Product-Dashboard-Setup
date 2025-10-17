@@ -11,3 +11,24 @@ body {
     text-align: center;
 }
 
+/* Header */
+.site-header {
+    border-bottom: 1px solid var(--border);
+    padding: 16px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: clamp(28px, 6vw, 56px);
+    letter-spacing: 1px;
+}
+
+/* Product Grid Layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 16px;
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
