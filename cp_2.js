@@ -64,4 +64,14 @@ card.append(img,title,priceEl);
 container.appendChild(card);
     });
 }
-    
+
+// Reusable error handler
+function handleError(error) {
+    console.error(`An error occured: ${error.message}`);
+    const container = document.getElementById("product-container");
+    container.innerHTML = <div class="error">An error occured: ${error.message}</div>;
+}
+
+// run both
+fetchProductsThen();
+fetchProductAsync();
