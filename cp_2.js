@@ -40,8 +40,8 @@ function displayProducts(products) {
         const {name, price, image} = p.fields;
         const imgUrl = image[0].url;
         const formattedPrice = (price / 100).toLocaleString("en-US", {
-            stle: "currency",
-            currenct: "USD",
+            style: "currency",
+            currency: "USD",
         });
     
 // Card Element
@@ -69,7 +69,8 @@ container.appendChild(card);
 function handleError(error) {
     console.error(`An error occured: ${error.message}`);
     const container = document.getElementById("product-container");
-    container.innerHTML = <div class="error">An error occured: ${error.message}</div>;
+    container.innerHTML = 
+   ` <div class="error">An error occured: ${error.message || error}</div>;`
 }
 
 // run both
