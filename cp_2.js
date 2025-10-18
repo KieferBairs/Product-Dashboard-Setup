@@ -43,5 +43,25 @@ function displayProducts(products) {
             stle: "currency",
             currenct: "USD",
         });
-        
+    
+// Card Element
+const card = document.createElement("article");
+card.className = "product-card";
+
+const img = document.createElement("img");
+img.src = imgUrl;
+img.alt = name;
+
+const title = document.createElement("h3");
+title.className = "product-name";
+title.textContent = name;
+
+const priceEl = document.createElement("p");
+priceEl.className = "product-price";
+priceEl.textContent = formattedPrice;
+
+card.append(img,title,priceEl);
+container.appendChild(card);
+    });
+}
     
